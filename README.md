@@ -1,2 +1,2 @@
-# -
-前端学习笔记
+#   Ajax
+* [ XmlHttpRequest.readyState.md ]( Ajax/XmlHttpRequest.readyState.md )
