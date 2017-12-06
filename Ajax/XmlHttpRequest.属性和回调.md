@@ -23,3 +23,16 @@
 此阶段确认全部数据都已经解析为客户端可用的格式，解析已经完成。值为4表示数据解析完毕，可以通过XMLHttpRequest对象的相应属性取得数据。
 概而括之，整个XMLHttpRequest对象的生命周期应该包含如下阶段：
 # **创建－初始化请求－发送请求－接收数据－解析数据－完成**
+
+# XMLHttpRequest.onreadystatechange
+
+    只要 readyState 属性发生变化，就会调用相应的处理函数。这个回调函数会被用户线程所调用。XMLHttpRequest.onreadystatechange 会在 XMLHttpRequest 的readyState 属性发生改变时触发 readystatechange 事件的时候被调用。
+
+> 警告：这个方法不该用于同步的requests对象,并且不能在内部(C++)代码中使用.
+
+    当一个 XMLHttpRequest 请求被 abort() 方法取消时，其对应的 readystatechange 事件不会被触发。
+
+# response
+
+    响应实体的类型由 responseType 来指定， 可以是 ArrayBuffer， Blob， Document， JavaScript 对象 (即 "json")， 或者是字符串。如果请求未完成或失败，则该值为 null。
+
