@@ -1,5 +1,6 @@
 # XMLHttpRequest.readyState 
-    属性返回一个 XMLHttpRequest  代理当前所处的状态。一个 XHR 代理总是处于下列状态中的一个：
+
+属性返回一个 XMLHttpRequest  代理当前所处的状态。一个 XHR 代理总是处于下列状态中的一个：
 
 
 | 值  | 状态             | 描述                                              |
